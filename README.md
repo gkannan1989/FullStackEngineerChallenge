@@ -1,39 +1,79 @@
-# Full Stack Developer Challenge
-This is an interview challengs. Please feel free to fork. Pull Requests will be ignored.
+# Employee review system
+This app handles employee review management </br>
 
-## Requirements
-Design a web application that allows employees to submit feedback toward each other's performance review.
+### What is used:
+Frontend
+- React 
+- Redux
+- Meterial UI
 
-*Partial solutions are acceptable.*  It is not necessary to submit a complete solution that implements every requirement.
+Backend
+- Express
+- MongoDB + Mongoose
+- Passport.js
 
-### Admin view
-* Add/remove/update/view employees
-* Add/update/view performance reviews
-* Assign employees to participate in another employee's performance review
+Demo
 
-### Employee view
-* List of performance reviews requiring feedback
-* Submit feedback
+ [![Demo Doccou alpha](https://cdn.loom.com/sessions/thumbnails/e04c6f7671e54edfba8557684f52c7cd-00001.gif)](https://cdn.loom.com/sessions/raw/e04c6f7671e54edfba8557684f52c7cd.webm?Expires=1570006739&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4ubG9vbS5jb20vc2Vzc2lvbnMvcmF3L2UwNGM2Zjc2NzFlNTRlZGZiYTg1NTc2ODRmNTJjN2NkLndlYm0iLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1NzAwMDY3Mzl9fX1dfQ__&Signature=TOqohGcnS2rQO5T74EBKcvGm1~F8MlAKC~7NJOEyj7-iKCK2KZlR0oCXL20rFQsHpERkY7EhS-CPo~AFcdtd1TSiJDCOdTCWT9swG7B9X-yRSFr7ha0ShSmQLo0ffWNBiSgqOPl0ebDWG7qBy~~AP3WRioWqmcyOp-bYvc~9jR0OlGjNS3L-FkrLKQSZ17KXXoYTAF4PbfvSwngWaG60g39feVrrElcFh~m1LIa7dUq1fmm40Bhdl4G5GQCSbu5xL~br9U45NWTQ7fns3qpw55VK8ralHl5IZz~8Y-6J-WLU3MyDKGQTspnSonj8UpwbPXnF0v3fc-E~kusbTwcCKg__&Key-Pair-Id=APKAJQIC5BGSW7XXK7FQ)
 
-## Challenge Scope
-* High level description of design and technologies used
-* Server side API (using a programming language and/or framework of your choice)
-  * Implementation of at least 3 API calls
-  * Most full stack web developers at PayPay currently use Java, Ruby on Rails, or Node.js on the server(with MySQL for the database), but feel free to use other tech if you prefer
-* Web app
-  * Implementation of 2-5 web pages using a modern web framework (e.g. React or Angular) that talks to server side
-    * This should integrate with your API, but it's fine to use static responses for some of it 
-* Document all assumptions made
-* Complete solutions aren't required, but what you do submit needs to run.
+#### Usage 
+Clone this repo
+```
+$ git clone https://github.com/gkannan1989/employee-review-system.git
+```
 
-## How to complete this challenge
-* Fork this repo in github
-* Complete the design and code as defined to the best of your abilities
-* Place notes in your code to help with clarity where appropriate. Make it readable enough to present to the PayPay interview team
-* Complete your work in your own github repo and send the results to us and/or present them during your interview
+Go to the folder
+```
+$ cd employee-review-system
+```
 
-## What are we looking for? What does this prove?
-* Assumptions you make given limited requirements
-* Technology and design choices
-* Identify areas of your strengths
-* This is not a pass or fail test, this will serve as a common ground that we can deep dive together into specific issues
+Go to the server folder
+```
+$ cd server
+```
+
+Install dependencies
+```
+$ npm install
+```
+
+Run mongo server
+```
+$ mongod
+```
+
+Run datafeed to create sample data
+```
+$ npm run datafeed
+```
+
+Rename .env.example to .env
+
+Run server
+```
+$ npm run dev
+```
+
+Go back to the cli folder
+```
+$ cd ..
+```
+
+Install dependencies
+```
+$ npm install
+```
+
+Run client
+```
+$ npm run dev
+```
+
+Your application serves at localhost:8080
+
+Test accounts based on the datafeed.js: - you can try the below accounts 
+
+kannan@coder.com:123456777 - Admin</br>
+priya@coder.com:123456777 - Employee</br>
+saatvika@coder.com:123456777 - Employee</br>
+hossien@coder.com:123456777 - Employee</br>
